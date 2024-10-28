@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #F8B195;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: white;
+            padding: 2px;
+            width: 80%;
+            max-width: 600px;
+        }
+        select {
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            margin-right: 10px;
+            outline: none;
+            background-color: #F67280;
+            color: white;
+            flex: 1;
+            cursor: pointer;
+            height: 40px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        select:hover {
+            background-color: #D95B43;
+            transform: scale(1.05);
+        }
+        select:focus {
+            background-color: #D95B43;
+            outline: none;
+            transform: scale(1.05);
+        }
+        input[type="text"] {
+            border: none;
+            padding: 2px;
+            border-radius: 20px;
+            width: 100%;
+            outline: none;
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+        }
+        input[type="text"]:focus {
+            border: 2px solid #C06C84;
+            box-shadow: 0 0 5px rgba(192, 108, 132, 0.5);
+        }
+        input[type="submit"] {
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #C06C84;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #A0546D;
+            transform: scale(1.05);
+        }
+        input[type="submit"]:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <select>
+            <option value="option1">Everything</option>
+            <option value="option2">Software Development</option>
+            <option value="option3">Web Development</option>
+            <option value="option4">Data Analyst</option>
+            <option value="option5">IT Consultant</option>
+            <option value="option6">Network Administrator</option>
+        </select>
+        <input type="text" placeholder="Search...">
+        <input type="submit" value="Search">
+    </div>
+</body>
+</html>
